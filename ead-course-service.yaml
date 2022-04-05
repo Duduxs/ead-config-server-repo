@@ -40,9 +40,16 @@ ead:
     exchange:
       userEvent:
         name: ead.userevent
+      notificationCommand:
+        name: ead.notificationcommand
     queue:
       userEvent:
         name: ead.userevent.ms.course
+    key:
+      notificationCommand:
+        name: ms.notification
+
+
 
 management:
   endpoints:
