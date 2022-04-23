@@ -41,8 +41,6 @@ ead:
       notificationCommand:
         name: ms.notification
 
-
-
 management:
   endpoints:
     web:
