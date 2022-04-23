@@ -1,13 +1,13 @@
 server:
-  port: 8082
+  port: ${PORT}
   servlet:
     context-path: '/ead-course/'
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5439/course
-    username: ${POSTGRES_USER}
-    password: ${POSTGRES_PASSWORD}
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
   application:
     name: ead-course-service
   jpa:
@@ -22,15 +22,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
   rabbitmq:
-    addresses: amqps://yyvtpqtx:w9iD5s6UIvyd7CL5mHka5uuA31dtOIL6@chimpanzee.rmq.cloudamqp.com/yyvtpqtx
-logging:
-  level:
-    org:
-      hibernate:
-        type:
-          descriptor:
-            sql:
-              BasicBinder: TRACE
+    addresses: ${CLOUDAMQP_URL}
 
 ead:
   api:
