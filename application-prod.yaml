@@ -9,6 +9,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: 'https://${ead.serviceRegistry.username}:${ead.serviceRegistry.password}@ead-ms-service-registry-prod.herokuapp.com/eureka'
-    instance:
-      hostname: ${APP_DOMAIN_NAME}
-      non-secure-port: 80
+  instance:
+    hostname: ${APP_DOMAIN_NAME}
+    non-secure-port: 80
