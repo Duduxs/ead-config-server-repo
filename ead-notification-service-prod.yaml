@@ -23,13 +23,7 @@ spring:
     open-in-view: false
   rabbitmq:
     addresses: ${CLOUDAMQP_URL}
-logging:
-  level:
-    com.ead: TRACE
-    root: INFO
-    org.springframework.web: DEBUG
-    org.hibernate: INFO
-
+    
 ead:
   broker:
     exchange:
