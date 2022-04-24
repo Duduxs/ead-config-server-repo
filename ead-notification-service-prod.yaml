@@ -23,7 +23,7 @@ spring:
     open-in-view: false
   rabbitmq:
     addresses: ${CLOUDAMQP_URL}
-    
+
 ead:
   broker:
     exchange:
