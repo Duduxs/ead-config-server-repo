@@ -51,6 +51,7 @@ Take a look into others microservices that were developed for the EAD Plataform.
  
  - Cross Cuting Microservices
     - <a href="https://github.com/Duduxs/ead-service-registry">Service Registry</a>
+    - <a href="https://github.com/Duduxs/ead-config-server-repo">Config Server</a>
     - <a href="https://github.com/Duduxs/ead-config-server">Config Server (Impl)</a>
     - <a href="https://github.com/Duduxs/ead-api-gateway">Gateway</a>
 - Business Microservices
