@@ -12,7 +12,9 @@ spring:
     password: ${POSTGRES_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: create
+      hbm2ddl:
+        auto: update
+      ddl-auto: update
       jdbc:
         lob.non-contextual-creation: true
     properties:
