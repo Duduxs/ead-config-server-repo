@@ -1,0 +1,39 @@
+server:
+  port: 8085
+  servlet:
+    context-path: '/ead-payment/'
+
+spring:
+  application:
+    name: ead-payment-service
+  datasource:
+    url: jdbc:postgresql://localhost:5442/notification
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      jdbc:
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+  rabbitmq:
+    addresses: amqps://lastidtg:KwkktjkXOFr0qo96SjJ0nIfvk9jg_aG6@woodpecker.rmq.cloudamqp.com/lastidtg
+logging:
+  level:
+    com.ead: TRACE
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
