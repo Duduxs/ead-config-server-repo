@@ -25,7 +25,7 @@ spring:
     ansi:
       enabled: Always
   rabbitmq:
-    addresses: amqps://yyvtpqtx:w9iD5s6UIvyd7CL5mHka5uuA31dtOIL6@chimpanzee.rmq.cloudamqp.com/yyvtpqtx
+    addresses: amqps://lastidtg:KwkktjkXOFr0qo96SjJ0nIfvk9jg_aG6@woodpecker.rmq.cloudamqp.com/lastidtg
 
 logging:
   level:
