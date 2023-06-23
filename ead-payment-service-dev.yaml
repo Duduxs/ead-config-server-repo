@@ -37,6 +37,8 @@ ead:
         name: ead.userevent
       paymentCommandExchange:
         name: ead.paymentcommand
+      paymentEventExchange:
+        name: ead.paymentevent
     queue:
       userEvent:
         name: ead.userevent.ms.payment
