@@ -12,8 +12,6 @@ spring:
     password: ${POSTGRES_PASSWORD}
   jpa:
     hibernate:
-      hbm2ddl:
-        auto: update
       ddl-auto: update
       jdbc:
         lob.non-contextual-creation: true
@@ -37,9 +35,15 @@ ead:
     exchange:
       userEvent:
         name: ead.userevent
+      paymentCommandExchange:
+        name: ead.paymentcommand
     queue:
       userEvent:
         name: ead.userevent.ms.payment
+      paymentCommand:
+        name: ead.paymentcommand.ms.payment
+      key:
+        paymentCommand: ms.payment
 
 management:
   endpoints:
